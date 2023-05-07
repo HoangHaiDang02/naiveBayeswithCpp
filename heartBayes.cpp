@@ -300,11 +300,8 @@ int main() {
 	// nhap cp
 	cout<<"=========================";
 	cout<<endl<<"Option cp";
-	cout<<endl<<"1:Dau that nguc dien hinh"<<endl<<"2:Dau that nguc khong dien hinh"<<endl<<"3:Dau nhung khong dau that nguc nhung khong"<<endl<<"4:Khong co trieu chung"<<endl;
-	while (x3<=0 || x3>4)
-	{
-		cout<<"Nhap cp:";cin>>x3;
-	}
+	cout<<endl<<"0:Dau that nguc dien hinh"<<endl<<"1:Dau that nguc khong dien hinh"<<endl<<"2:Dau nhung khong dau that nguc nhung khong"<<endl<<"3:Khong co trieu chung"<<endl;
+	cout<<"Nhap cp:";cin>>x3;
 
 	//nhap trtbps
 	cout<<"=========================";
