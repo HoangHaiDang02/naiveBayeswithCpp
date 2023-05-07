@@ -175,7 +175,7 @@ int main() {
     vector<vector<int> > testset;
 
     // chon ty le chia theo du lieu dau vao (80%)
-    double splitRatio = 0.8;
+    double splitRatio = 0.7;
     // thuc hien chia
     int trainsize = round(inputdata.size() * splitRatio);
     splitTrainTest(inputdata,trainset,testset,trainsize);
@@ -278,7 +278,6 @@ int main() {
 
 
 	int x1,x3,x4,x5,x8,x10;
-	// int x6,x7,x9,x11,x12,x13;
 
 	//nhap tuoi
 	cout<<"=========================";
@@ -380,9 +379,6 @@ int main() {
 	cout<<"=========================";
 	cout<<endl<<"Option thal(0-1-2-3)"<<endl;
 	cout<<"Nhap thal:";cin>>x13;
-
-
-	// cout<<x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13;
 
 	vector<int> allPoint;
 	allPoint.push_back(x1);
