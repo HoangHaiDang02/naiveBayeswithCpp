@@ -57,6 +57,7 @@ vector<string> getColumnNames( string str) {
 	return names;
 }
 
+//chia tap train va test
 void splitTrainTest(vector<vector<int> > inputdata,vector<vector<int> > &trainset, vector<vector<int> > &testset, int trainsize) {
     for(int i = 0;i< inputdata.size();i++) {
     	(i < trainsize) ? trainset.push_back(inputdata[i]) : testset.push_back(inputdata[i]);
@@ -106,6 +107,7 @@ int predict(vector<column> columns, labels l, vector<int> x) {
 			}
 		}
 	}
+	
 	double max_prob = 0, label;
 	for(int i=0;i<prob.size();i++) {
 		if(prob[i] > max_prob) {
