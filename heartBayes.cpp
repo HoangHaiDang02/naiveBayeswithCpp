@@ -217,7 +217,7 @@ int main() {
 	heart_lbs.probability = probability_D;
 
 	//in ra thong tin xac suat cua nhan
-	cout<<"Xac suat gia tri vao tung nhan: "<<endl;
+	cout<<"Xac suat tung nhan: "<<endl;
 	for(int i=0;i<probability_D.size();i++) {
 		cout <<"Nhan "<<labelValues[i] << ": ";
 		cout << probability_D[i]*100.0<<" %"<<endl;
