@@ -177,7 +177,7 @@ int main() {
     vector<vector<int> > testset;
 
     // chon ty le chia theo du lieu dau vao (80%)
-    double splitRatio = 0.7;
+    double splitRatio = 0.8;
     // thuc hien chia
     int trainsize = round(inputdata.size() * splitRatio);
     splitTrainTest(inputdata,trainset,testset,trainsize);
