@@ -93,11 +93,11 @@ void conditional_probability(column &columns, labels labels, vector< vector<int>
 }
 
 // du doan lop
-int predict(vector<column> columns, labels l, vector<int> x) {
+int predict(vector<column> columns, labels labels, vector<int> x) {
 	vector<double> prob;
-	prob = l.probability;
+	prob = labels.probability;
 
-	for(int k=0; k<l.values.size();k++) {
+	for(int k=0; k<labels.values.size();k++) {
 		for(int i = 0; i < x.size(); i++) {
 			for(int j = 0 ;j < columns[i].values.size();j++) {
 				if(columns[i].values[j] == x[i]) {
