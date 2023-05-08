@@ -76,19 +76,19 @@ vector<int> getAllValuesOfColumn(int index, vector< vector<int> > a) {
 }
 
 // tinh xac suat co dieu kien cua mot thuoc tinh
-void conditional_probability(column &c, labels l, vector< vector<int> > trainset) {
-	for(int k = 0; k < c.values.size(); k++) {
+void conditional_probability(column &columns, labels labels, vector< vector<int> > trainset) {
+	for(int k = 0; k < columns.values.size(); k++) {
 		vector<double> prob;
-		for(int m = 0; m < l.values.size();m++) {
+		for(int m = 0; m < labels.values.size();m++) {
 			int count_value_with_label = 0;
 			for(int i=0;i<trainset.size();i++) {
-				if(trainset[i][c.index] == c.values[k] && trainset[i][trainset[i].size()-1] == l.values[m]) {
+				if(trainset[i][columns.index] == columns.values[k] && trainset[i][trainset[i].size()-1] == labels.values[m]) {
 					count_value_with_label++;
 				}
 			}
-			prob.push_back(count_value_with_label * 1.0 / l.numOfvalues[m]);
+			prob.push_back(count_value_with_label * 1.0 / labels.numOfvalues[m]);
 		}
-		c.probabilityOfClass.push_back(prob);
+		columns.probabilityOfClass.push_back(prob);
 	}
 }
 
